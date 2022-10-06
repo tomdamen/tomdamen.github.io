@@ -1,0 +1,29 @@
+//COLORS
+
+// Primary
+
+$poker-green: hsla(162, 100%, 22%, 1);
+
+$yellow: #FAB234;
+$yellow-light: #FDD791;
+$blue: #66CCCE;
+$blue-light: #B3E6E4;
+$pink: #F573C0;
+$pink-light: #FAB9E0;
+$green: #73CB5E;
+$green-light: #B9E5A5;
+$red: #F35937;
+$light-red: #F9A786;
+
+
+
+// Neutral
+
+
+
+
+//card properties
+
+$card-height: 200px;
+$card-width: calc($card-height * 2.5 / 3.5);
+$fs-normal: max(12px, calc($card-height/15));

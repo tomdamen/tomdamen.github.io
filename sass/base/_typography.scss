@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+* {
+    font-family: 'League Spartan', sans-serif;
+
+    // transform-style: preserve-3d;
+}
+
+
+p {
+    font-size: $fs-normal;
+    // padding: calc($card-height / 10);
+    text-align: center;
+}

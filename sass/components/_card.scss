@@ -1,0 +1,110 @@
+.card {
+
+    position: absolute;
+
+    height: $card-height;
+    width: $card-width;
+    border-radius: calc($card-height / 15);
+
+
+    translate: -50% -50%;
+
+    transition: top 0.5s, left 0.5s, bottom 0.5s, right 0.5s;
+
+
+
+    justify-content: center;
+
+
+
+    .cardContent {
+        backface-visibility: hidden;
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: calc($card-height / 35);
+
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .front {
+        transform: rotateY(180deg);
+        background-color: white;
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .back {
+        padding: 5px;
+
+
+
+    }
+
+    .paddingBox {
+        height: 100%;
+        width: 100%;
+        border-radius: calc($card-height / 35);
+
+        box-shadow: inset 0px 0px 0 3px white;
+
+        color: white;
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        &>* {
+            padding: 10px;
+        }
+
+        img {
+            padding: 10px auto;
+        }
+
+        .gesprekskaart {
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+        .whitePadding {
+            background-color: white;
+            padding: 0px 15px;
+            border-radius: 100px;
+            margin-bottom: 10px;
+        }
+
+
+
+    }
+
+
+}
+
+.active:hover {
+    z-index: 1000 !important;
+
+    .front {
+        scale: 1.5;
+        transform-origin: bottom;
+        transition: scale 0.2s ease-in-out;
+    }
+
+    .back {
+        scale: 1.5;
+        transform-origin: bottom;
+        transition: scale 0.2s ease-in-out;
+    }
+}

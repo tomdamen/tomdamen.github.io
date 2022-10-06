@@ -1,0 +1,47 @@
+.playingField {
+    position: relative;
+
+    margin: 30px auto;
+    background-color: $poker-green;
+
+    width: 800px;
+    height: 800px;
+
+    overflow: hidden;
+
+}
+
+.activePlayer {
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+
+    p {
+        font-size: 2rem;
+
+    }
+}
+
+.passTurn {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+    background-color: gray;
+    font-size: 2rem;
+    border-top-left-radius: 25px;
+
+    #passTurn {
+        padding: 10px;
+
+    }
+}
+
+.stopDealing {
+    scale: 2;
+    transform-origin: top right;
+    display: flex;
+    position: absolute;
+    right: 0;
+}
